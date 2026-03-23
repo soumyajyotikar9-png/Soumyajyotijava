@@ -23,14 +23,11 @@ class Main {
         Item[] items = new Item[5];
         double total = 0;
 
-        // Create objects and accept data
         for (int i = 0; i < 5; i++) {
             items[i] = new Item();
             System.out.println("\nEnter details for item " + (i + 1) + ":");
             items[i].getData(sc);
         }
-
-        // Display data in tabular form
         System.out.println("\nCode\tPrice");
         System.out.println("----------------");
 
@@ -39,7 +36,6 @@ class Main {
             total += items[i].price;
         }
 
-        // Display total price
         System.out.println("----------------");
         System.out.println("Total Price = " + total);
 
